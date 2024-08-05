@@ -1,0 +1,32 @@
+<h2>Books</h2>
+<!--Add book-->
+<!--<div>
+  <label for="new-book">Book name: </label>
+  <input id="new-book" #bookName />
+  <button type="button" class="add-button" (click)="addBook(bookName.value); bookName.value=''">
+    Add book
+  </button>
+</div>-->
+<!--Add book end-->
+<!--Book list-->
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Id</th>
+    <th>Book Name</th>
+    <th>Author</th>
+  </tr>
+
+  <tr *ngFor="let book of bookList">
+    <!--<a routerLink="/detail/{{book.id}}">-->
+    <td>{{book.category.name}}</td>
+    <td>{{book.id}}</td>
+    <td>{{book.name}}</td>
+    <td>{{book.author}}</td>
+
+
+    <!--</a>-->
+    <!--<button type="button" class="delete" title="delete book" (click)="deleteBook(book.id)"> x </button>-->
+  </tr>
+</table>
+<!--Hero list end-->
