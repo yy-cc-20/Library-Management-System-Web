@@ -1,0 +1,53 @@
+{
+  "categoryList": [
+    {
+      "id": "72a17923-04a6-494b-9d3c-2c0cb161434c",
+      "name": "Romance"
+    },
+    {
+      "id": "289ac3de-1cf3-4a0d-8795-f6e9b48b9ddb",
+      "name": "Fiction"
+    },
+    {
+      "id": "f5cc7950-1491-467e-9745-58a30b1e8304",
+      "name": "Mystery"
+    },
+    {
+      "id": "4cf3922a-76b7-4b5d-83e3-59b2bc2a779f",
+      "name": "Science Fiction"
+    },
+    {
+      "id": "a6b1b4f1-66fb-4a6c-b006-610530f90561",
+      "name": "Historical Fiction"
+    }
+  ],
+  "bookList": [
+    {
+      "id": "37ad38a5-0509-4472-ac2f-3df5b3aa5ec7",
+      "name": "And Then There Were None",
+      "author": "Agatha Christie",
+      "category": {
+        "id": "f5cc7950-1491-467e-9745-58a30b1e8304",
+        "name": "Mystery"
+      }
+    },
+    {
+      "id": "50a77a02-c363-473a-a3ad-1959dd49c9cc",
+      "name": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "category": {
+        "id": "4cf3922a-76b7-4b5d-83e3-59b2bc2a779f",
+        "name": "Science Fiction"
+      }
+    },
+    {
+      "id": "608562c5-0e28-4f15-bab7-3406173c3bed",
+      "name": "The Book Thief",
+      "author": "Markus Zusak",
+      "category": {
+        "id": "a6b1b4f1-66fb-4a6c-b006-610530f90561",
+        "name": "Historical Fiction"
+      }
+    }
+  ]
+}

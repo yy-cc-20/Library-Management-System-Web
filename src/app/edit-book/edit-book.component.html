@@ -1,0 +1,26 @@
+<h2>Edit Book</h2>
+<form [formGroup]="editBookForm" (submit)="submitEditBookForm()" *ngIf="book; else notFound">
+  <label for="book-id">Book Id</label>
+  <input required id="book-id" type="text" formControlName="bookId" [(ngModel)]="book.id" readonly>
+
+  <label for="book-name">Book Name</label>
+  <input required id="book-name" type="text" formControlName="bookName" [(ngModel)]="book.name">
+
+  <label for="author">Author</label>
+  <input required id="author" type="text" formControlName="author" [(ngModel)]="book.author">
+
+  <div *ngIf="book.category">
+    <label for="category">Category</label>
+    <select required formControlName="categoryId" id="category" [(ngModel)]="book.category_id">
+      <option *ngFor="let category of categoryList"
+              value="{{category.id}}">
+        {{category.name}}
+      </option>
+    </select>
+  </div>
+  
+  <button type="submit" class="primary">Save</button>
+  <button type="button" [routerLink]="['/']">Back</button>
+</form>
+
+<ng-template #notFound>Book not found.</ng-template>

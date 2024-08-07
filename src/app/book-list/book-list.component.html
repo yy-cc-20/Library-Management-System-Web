@@ -1,32 +1,24 @@
+<p>Refresh the page to see new changes.</p>
+
+<app-add-book></app-add-book>
+
 <h2>Books</h2>
-<!--Add book-->
-<!--<div>
-  <label for="new-book">Book name: </label>
-  <input id="new-book" #bookName />
-  <button type="button" class="add-button" (click)="addBook(bookName.value); bookName.value=''">
-    Add book
-  </button>
-</div>-->
-<!--Add book end-->
-<!--Book list-->
 <table>
   <tr>
     <th>Category</th>
     <th>Id</th>
     <th>Book Name</th>
     <th>Author</th>
+    <th>Action</th>
   </tr>
-
-  <tr *ngFor="let book of bookList">
-    <!--<a routerLink="/detail/{{book.id}}">-->
-    <td>{{book.category.name}}</td>
+  <tr *ngFor="let book of bookList" >
+    <td>{{book.category!.name}}</td>
     <td>{{book.id}}</td>
-    <td>{{book.name}}</td>
+    <td><a routerLink="/book/{{book.id}}">{{book.name}}</a></td>
     <td>{{book.author}}</td>
-
-
-    <!--</a>-->
-    <!--<button type="button" class="delete" title="delete book" (click)="deleteBook(book.id)"> x </button>-->
+    <td>
+      <button type="button" routerLink="/edit-book/{{book.id}}"> Edit </button>
+      <button type="button" (click)="deleteBook(book.id!)"> Delete </button>
+    </td>
   </tr>
 </table>
-<!--Hero list end-->

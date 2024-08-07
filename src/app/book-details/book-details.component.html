@@ -1,0 +1,8 @@
+<div *ngIf="book; else notFound">
+  Category: {{book.category!.name}}<br />
+  Book Id: {{book.id}}<br />
+  Book Name: {{book.name}}<br />
+  Author: {{book.author}}<br />
+</div>
+<ng-template #notFound>Book not found.</ng-template>
+<button type="button" [routerLink]="['/']"> Back</button>

@@ -1,27 +1,47 @@
-# LibraryManagementSystemWeb
+# Library Management System (Web)
+This web application allows users to create, update, delete, and retrieve information about books.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
-## Development server
+## Table of Contents
+- [Features](#features)
+- [Technology Used](#technology-used)
+- [Installation](#installation)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- Create a new book
+- Update an existing book's details
+- Delete a book from the system
+- Retrieve a list of books
+- Retrieve details of a specific book
 
-## Code scaffolding
+## Technology Used
+| Software | Version |
+| -------- | ------- |
+| Angular CLI | 17.3.8 |
+| Node | 20.10.0 |
+| Package Manager | npm 10.2.3 |
+| OS | win32 x64 |
+| Angular | 17.3.12 |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Package | Version |
+| ------- | ------- |
+| @angular-devkit/architect |      0.1703.8 |
+| @angular-devkit/build-angular |  17.3.8 |
+| @angular-devkit/core |           17.3.8 |
+| @angular-devkit/schematics |     17.3.8 |
+| @angular/cli |                   17.3.8 |
+| @angular/ssr |                   17.3.8 |
+| @schematics/angular |            17.3.8 |
+| rxjs |                           7.8.1 |
+| typescript |                     5.4.5 |
+| zone.js |                        0.14.8 |
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
+1. Open the console under the project directory.
+2. Install neccessary package `npm install rxjs`
+3. Download and run the API server `https://git2.uberfusion.com/chuyan.yang/LibraryManagementSystem`
+3. `ng serve --open` Will open the application in the browser with url `http://localhost:4200/`. 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -3,8 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\book-list"
+    "\\src\\app\\add-book",
+    "\\src\\app\\book-details",
+    "\\src\\app\\book-list",
+    "\\src\\app\\edit-book",
+    "\\src\\app\\search-book"
   ],
-  "SelectedNode": "\\src\\app\\book.ts",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,15 @@
+<h2>Add New Book</h2>
+<form [formGroup]="addBookForm" (submit)="submitAddBookForm()">
+  <label for="book-name">Book Name</label>
+  <input required id="book-name" type="text" formControlName="bookName">
+
+  <label for="author">Author</label>
+  <input required id="author" type="text" formControlName="author">
+
+  <label for="category">Category</label>
+  <select required formControlName="categoryId" id="category">
+    <option *ngFor="let category of categoryList"
+            value="{{category.id}}">{{category.name}}</option>
+  </select>
+  <button type="submit" class="primary">Add</button>
+</form>
