@@ -9,16 +9,24 @@ This web application allows users to create, update, delete, and retrieve inform
 
 ## Features
 - Create a new book
+
+
 ![image](https://github.com/user-attachments/assets/86888a41-eac2-4d0f-9205-d3cbc90ea93a)
 
 - Update an existing book's details
+
+
 ![image](https://github.com/user-attachments/assets/451ac9c9-644f-4736-8242-302b28ec11e8)
 
 - Delete a book from the system
 - Retrieve a list of books
+
+
 ![image](https://github.com/user-attachments/assets/e77530aa-4f6e-434a-8aa8-b16a1661a1af)
 
 - Retrieve details of a specific book
+
+
 ![image](https://github.com/user-attachments/assets/7f04e4ef-9131-4a69-81ed-2d494749caa5)
 
 
